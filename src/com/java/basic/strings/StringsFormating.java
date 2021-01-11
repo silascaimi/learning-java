@@ -19,12 +19,13 @@ public class StringsFormating {
 		String s10 = String.format("W:%-4d X:%-4d", 5, 235); 	// W:5    X:235
 		
 		String s11 = String.format("%d", 1234567); 		// 1,234,567
-		String s12 = String.format("%,.2f", 1234567); 	// 1,234,567.00
+		String s12 = String.format("%,.2f", 1234567f); 	// 1,234,567.00
 		
 		String s13 = String.format("%+d", 123); 	// +123
 		String s14 = String.format("%+d", -456); 	// -456
 		
-		String s15 = String.format("%3$d %1$d %4$d", 100, 200, 300); 	// 300 100 200
+		String s15 = String.format("%3$d %1$d %2$d", 100, 200, 300); 	// 300 100 200
+		System.out.println(s12);
 		
 	}
 }
