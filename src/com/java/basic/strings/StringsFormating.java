@@ -25,7 +25,6 @@ public class StringsFormating {
 		String s14 = String.format("%+d", -456); 	// -456
 		
 		String s15 = String.format("%3$d %1$d %2$d", 100, 200, 300); 	// 300 100 200
-		System.out.println(s12);
 		
 	}
 }
