@@ -1,5 +1,7 @@
 package com.java.basic.date;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -22,7 +24,7 @@ public class ExemploCalendar {
 		c1.set(Calendar.MINUTE, 30);
 		c1.set(Calendar.SECOND, 0);
 		// Metódo completo c1.set(1987, 10, 20, 15, 30);
-				 		
+
 		// Captura um Date de um Calendar
 		Date aniversario = c1.getTime();
 
@@ -30,11 +32,17 @@ public class ExemploCalendar {
 		c2.setTime(aniversario);
 
 		System.out.println(aniversario);
-		
+
+		// Calendar para String
+		DateFormat f = new SimpleDateFormat("dd/MM/yyyy");
+		String dataNascimento = f.format(c1.getTime());
+
+		System.out.println(dataNascimento);
+
 		// Somando ou subtraindo datas
 		c2.add(Calendar.MONTH, 1); // Adiciona 1 mês
 		c2.roll(Calendar.DAY_OF_MONTH, -5); // Subtrai 10 dias apenas do DIAS
-		
+
 		System.out.println(c2.getTime());
 	}
 }
