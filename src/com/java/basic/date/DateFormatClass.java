@@ -26,27 +26,27 @@ public class DateFormatClass {
 		
 		// Transforma um Date formatado em uma String
 		String dataHoje = f.format(hoje);
-		System.out.println("Simple: " + dataHoje);
+		System.out.println("Simple: " + dataHoje);	// 30/03/2021
 		
 		dataHoje = fShort.format(hoje);
-		System.out.println("Short: " + dataHoje);
+		System.out.println("Short: " + dataHoje);	// 30/03/2021
 		
 		dataHoje = fMedium.format(hoje);
-		System.out.println("Medium: " + dataHoje);
+		System.out.println("Medium: " + dataHoje);	// 30 de mar. de 2021
 		
 		dataHoje = fLong.format(hoje);
-		System.out.println("Long: " + dataHoje);
+		System.out.println("Long: " + dataHoje);	// 30 de março de 2021
 		
 		dataHoje = fLongIngles.format(hoje);
-		System.out.println("Long Ingles: " + dataHoje);
+		System.out.println("Long Ingles: " + dataHoje);		// March 30, 2021
 		
 		
 		System.out.println();
-		// Transforma um String em um Date formatado
+		// Transforma um String em um Date
 		String dataAniversario = "20/11/1987";
 		try {
 			Date aniversario = f.parse(dataAniversario);
-			System.out.println("Aniversario: " + aniversario);
+			System.out.println("Aniversario: " + aniversario);	// Fri Nov 20 00:00:00 GMT-03:00 1987
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
